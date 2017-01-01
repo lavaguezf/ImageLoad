@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.imageloadetest.MainActivity">
+    <GridView
+        android:id="@+id/id_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        >
+
+    </GridView>
+    <RelativeLayout
+        android:id="@+id/bootom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f9131111"
+        android:clickable="true">
+        <TextView
+            android:id="@+id/bottom_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="所有图片"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/bottom_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:text="1000张"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
